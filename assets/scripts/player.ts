@@ -1,4 +1,4 @@
-// test 123
+// test 123 56
 const { ccclass, property } = cc._decorator;
 
 @ccclass
