@@ -1,4 +1,4 @@
-// 2018
+// test
 const { ccclass, property } = cc._decorator;
 
 @ccclass

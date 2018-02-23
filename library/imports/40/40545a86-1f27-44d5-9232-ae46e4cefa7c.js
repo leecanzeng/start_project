@@ -3,10 +3,11 @@ cc._RF.push(module, '40545qGHydE1ZIyrkbkzvp8', 'player');
 // scripts/player.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
+// 2018
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
+var Player = /** @class */ (function (_super) {
+    __extends(Player, _super);
+    function Player() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         // 主角跳跃高度
         _this.jumpHeight = 0;
@@ -33,7 +34,7 @@ var NewClass = /** @class */ (function (_super) {
         return _this;
         // update (dt) {},
     }
-    NewClass.prototype.setJumpAction = function () {
+    Player.prototype.setJumpAction = function () {
         // 跳跃上升
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
@@ -41,35 +42,35 @@ var NewClass = /** @class */ (function (_super) {
         // 不断重复
         return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
     };
-    NewClass.prototype.start = function () {
+    Player.prototype.start = function () {
         cc.log(555);
         this.node.runAction(this.setJumpAction());
     };
     __decorate([
         property
-    ], NewClass.prototype, "jumpHeight", void 0);
+    ], Player.prototype, "jumpHeight", void 0);
     __decorate([
         property
-    ], NewClass.prototype, "jumpDuration", void 0);
+    ], Player.prototype, "jumpDuration", void 0);
     __decorate([
         property
-    ], NewClass.prototype, "squashDuration", void 0);
+    ], Player.prototype, "squashDuration", void 0);
     __decorate([
         property
-    ], NewClass.prototype, "maxMoveSpeed", void 0);
+    ], Player.prototype, "maxMoveSpeed", void 0);
     __decorate([
         property
-    ], NewClass.prototype, "accel", void 0);
+    ], Player.prototype, "accel", void 0);
     __decorate([
         property({
             url: cc.AudioClip
         })
-    ], NewClass.prototype, "jumpAudio", void 0);
-    NewClass = __decorate([
+    ], Player.prototype, "jumpAudio", void 0);
+    Player = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
+    ], Player);
+    return Player;
 }(cc.Component));
-exports.default = NewClass;
+exports.default = Player;
 
 cc._RF.pop();
