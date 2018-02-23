@@ -1,6 +1,9 @@
 node_modules,
 .vscode
-library
-local
-settings
-temp
+library/
+temp/
+local/
+build/
+.DS_Store
+ehthumbs.db
+Thumbs.db
