@@ -356,9 +356,12 @@
     "_enabled": true,
     "jumpHeight": 200,
     "jumpDuration": 0.3,
-    "squashDuration": 400,
-    "maxMoveSpeed": 350,
-    "accel": 0
+    "squashDuration": 0.3,
+    "maxMoveSpeed": 400,
+    "accel": 1000,
+    "jumpAudio": {
+      "__uuid__": "dc194f1a-c8a5-46ca-aaf9-f03b70974af5"
+    }
   },
   {
     "__type__": "cc.Canvas",
