@@ -14310,6 +14310,8 @@ declare module cc {
 			/** !#en A reference to the detailed data of the event
 			!#zh 事件的详细数据 */
 			detail: any;			
+			keyCode: any;
+			touch: any;
 			/**
 			!#en Sets user data
 			!#zh 设置用户数据
