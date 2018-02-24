@@ -112,11 +112,7 @@ export default class Player extends cc.Component {
 
     update(dt) {
         // 根据当前加速度方向每帧更新速度
-<<<<<<< HEAD
-        cc.log('update144')
-=======
         cc.log('update16')
->>>>>>> 7b7386e6ce2ea0b812a240a41bb671cd66f80816
         if (this.accLeft) {
             this.xSpeed -= this.accel * dt;
         } else if (this.accRight) {
