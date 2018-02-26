@@ -27,7 +27,7 @@ export default class Player extends cc.Component {
     @property({
         url: cc.AudioClip
     })
-    jumpAudio = ''
+    jumpAudio = null
 
     // 加速度方向开关
     accLeft = false

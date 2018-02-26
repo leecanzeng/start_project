@@ -38,5 +38,9 @@ export default class Star extends cc.Component {
             this.onPicked()
             return
         }
+        // 给星星增加渐隐效果
+        let opacityRatio = 1 - this.game.timer / this.game.starDuration
+        this.node.opacity = Math.floor(opacityRatio * 255)
+        
     }
 }
